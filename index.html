@@ -7,13 +7,16 @@
   <meta name="title" content="Gemotest task">
   <meta name="keyword" content="Гемотест, тестовое задание Гемотест">
   <meta name="description" content="HTML верстка трех небольших блока">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
 <body>
   <section class="medical-services">
     <div class="wrapper">
-      <h1 class="medical-services__title">Мед. услуги</h1>
+      <h1 class="medical-services__title">Медицинские услуги</h1>
       <div class="medical-services__service-card">
         <h3 class="medical-services__service-card-title">Вызов бригады домой</h3>
         <p class="medical-services__service-card-description">Бесплатный выезд. Для детей и взрослых. Удобно и быстро.</p>
@@ -38,45 +41,55 @@
     <div class="wrapper">
       <h2 class="other-medical-services__title">ДРУГИЕ МЕДИЦИНСКИЕ УСЛУГИ</h2>
       <ul class="other-medical-services__service-list">
-        <li class="other-medical-services__service-item">УЗИ дома – бесплатный выезд</li>
-        <li class="other-medical-services__service-item">ЭКГ дома – бесплатный выезд</li>
+        <li class="other-medical-services__service-item">УЗИ дома – <span class="other-medical-services__service-item--span-color">бесплатный выезд</span></li>
+        <li class="other-medical-services__service-item">ЭКГ дома – <span class="other-medical-services__service-item--span-color">бесплатный выезд</span></li>
         <li class="other-medical-services__service-item">Колькоскопия</li>
         <li class="other-medical-services__service-item">Лечение Сургитрон</li>
       </ul>
-      <a href="other-medical-services__link">Все медуслуги Гемотест (35) →</a>
+      <a href="" class="other-medical-services__link">Все медуслуги Гемотест (35) →</a>
     </div>
   </section>
 
   <section class="additional-services">
     <div class="wrapper">
       <div class="additional-services__service-card">
-        <img src="" alt="Описание услуги 1" class="additional-services__service-image">
-        <h3 class="additional-services__service-title">Справка в налоговую</h3>
-        <p class="additional-services__service-description">для оформления налогового вычета</p>
+        <img src="images/fns.webp" loading="lazy" alt="Описание услуги 1" class="additional-services__service-image">
+        <div class="additional-services__service-text">
+          <h3 class="additional-services__service-title">Справка в налоговую</h3>
+          <p class="additional-services__service-description">для оформления налогового вычета</p>
+        </div>
       </div>
 
       <div class="additional-services__service-card">
-        <img src="" alt="Описание услуги 1" class="additional-services__service-image">
-        <h3 class="additional-services__service-title">Бесплатная консультация</h3>
-        <p class="additional-services__service-description">врача по телефону</p>
+        <img src="images/consultant.webp" loading="lazy" alt="Описание услуги 1" class="additional-services__service-image">
+        <div class="additional-services__service-text">
+          <h3 class="additional-services__service-title">Бесплатная консультация</h3>
+          <p class="additional-services__service-description">врача по телефону</p>
+        </div>
       </div>
 
       <div class="additional-services__service-card">
-        <img src="" alt="Описание услуги 1" class="additional-services__service-image">
-        <h3 class="additional-services__service-title">Расшифровка результатов</h3>
-        <p class="additional-services__service-description">из других лабораторий</p>
+        <img src="images/decode.webp" loading="lazy" alt="Описание услуги 1" class="additional-services__service-image">
+        <div class="additional-services__service-text">
+          <h3 class="additional-services__service-title">Расшифровка результатов</h3>
+          <p class="additional-services__service-description">из других лабораторий</p>
+        </div>
       </div>
 
       <div class="additional-services__service-card">
-        <img src="" alt="Описание услуги 1" class="additional-services__service-image">
-        <h3 class="additional-services__service-title">Бонусная программа</h3>
-        <p class="additional-services__service-description">«Копите на здоровье»</p>
+        <img src="images/discount.webp" loading="lazy" alt="Описание услуги 1" class="additional-services__service-image">
+        <div class="additional-services__service-text">
+          <h3 class="additional-services__service-title">Бонусная программа</h3>
+          <p class="additional-services__service-description">«Копите <br> на здоровье»</p>
+        </div>
       </div>
 
       <div class="additional-services__service-card">
-        <img src="" alt="Описание услуги 1" class="additional-services__service-image">
-        <h3 class="additional-services__service-title">Второе мнение</h3>
-        <p class="additional-services__service-description">от онкоэкспертов мирового уровня</p>
+        <img src="images/cancer.webp" loading="lazy" alt="Описание услуги 1" class="additional-services__service-image">
+        <div class="additional-services__service-text">
+          <h3 class="additional-services__service-title">Второе мнение</h3>
+          <p class="additional-services__service-description">от онкоэкспертов мирового уровня</p>
+        </div>
       </div>
     </div>
   </section>
