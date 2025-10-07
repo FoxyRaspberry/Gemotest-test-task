@@ -21,7 +21,8 @@ body {
 }
 
 .medical-services {
-  padding: 24px 0 16px 0;
+  overflow: hidden;
+  padding: 24px 0 16px;
 }
 
 .medical-services__title {
@@ -32,18 +33,9 @@ body {
   color: #292D3A;
 }
 
-/* .medical-services__service-card-container {
-  width: 696px;
-  display: flex;
-  overflow-x: hidden;
-  gap: 8px;
-} */
-
 .medical-services__service-card-container {
   display: flex;
-  overflow: hidden;
-  /* width: 100%; */
-  width: 696px;
+  width: 664px;
   gap: 8px;
 }
 
@@ -161,8 +153,8 @@ body {
 }
 
 .other-medical-services__service-list--desktop {
-    display: none;
-  }
+  display: none;
+}
 
 .other-medical-services__service-list {
   list-style-type: none;
@@ -234,8 +226,8 @@ body {
 }
 
 .additional-services__service-card-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .additional-services__service-card {
