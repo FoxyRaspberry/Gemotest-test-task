@@ -260,7 +260,7 @@ body {
   color: #292D3A;
 }
 
-@media (width >=1024px) {
+@media (width >= 1024px) {
   .additional-services {
     padding: 24px 0 48px 0;
   }
@@ -271,8 +271,8 @@ body {
 
   .additional-services__service-card {
     flex-direction: column;
-    padding: 28px 0 40px;
     gap: 20px;
+    padding: 28px 16px 40px;
     width: 185px;
     height: 265px;
   }
