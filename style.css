@@ -48,6 +48,7 @@ body {
   padding: 28px 32px 32px 32px;
   width: 216px;
   height: 240px;
+  transition: margin 100ms linear;
 }
 
 #medical-services__service-card--1 {
