@@ -1,23 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    color: #333;
+  font-family: "Inter", sans-serif;
+  color: #333;
 }
 
 .wrapper {
-    margin: auto;
-    width: 256px;
+  margin: auto;
+  width: 256px;
 }
 
-@media (width >= 1024px) {
-    .wrapper {
-        width: 928px;
-    }
+@media (width >=1024px) {
+  .wrapper {
+    width: 928px;
+  }
 }
 
 .medical-services {
@@ -32,9 +32,18 @@ body {
   color: #292D3A;
 }
 
-.medical-services__service-card-container {
+/* .medical-services__service-card-container {
+  width: 696px;
   display: flex;
   overflow-x: hidden;
+  gap: 8px;
+} */
+
+.medical-services__service-card-container {
+  display: flex;
+  overflow: hidden;
+  /* width: 100%; */
+  width: 696px;
   gap: 8px;
 }
 
@@ -44,13 +53,23 @@ body {
   width: 216px;
   height: 240px;
   display: flex;
+  /* flex: 0 0 70%;
+  transition: transform 0.5s ease; */
+
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* .medical-services__service-card:nth-child(2) {
+    flex: 0 0 30%; 
+  }
+
+  .medical-services__service-card:nth-child(3) {
+    display: none;
+  } */
+
 #medical-services__service-card--1 {
   background-image: url(./images/Rectangle3.3.webp);
-  margin-left: 32px;
 }
 
 #medical-services__service-card--2 {
@@ -88,8 +107,44 @@ body {
   max-width: 96px;
 }
 
-@media screen {
-  
+@media (width >=1024px) {
+  .medical-services {
+    padding: 40px 0 24px 0;
+  }
+
+  .medical-services__title {
+    padding-bottom: 44px;
+    font-size: 30px;
+  }
+
+  .medical-services__service-card-container {
+    overflow: auto;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .medical-services__service-card {
+    padding: 32px 35px 40px 40px;
+    width: 298px;
+    height: 280px;
+    /* flex: 0 0 70%;
+    transition: transform 0.5s ease; */
+
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .medical-services__service-card-title {
+    font-size: 24px;
+  }
+
+  .medical-services__service-card-description {
+    font-size: 16px;
+  }
+
+  .medical-services__service-card-button {
+    font-size: 13px;
+  }
 }
 
 .other-medical-services {
@@ -104,6 +159,10 @@ body {
   opacity: 0.2;
   padding-bottom: 20px;
 }
+
+.other-medical-services__service-list--desktop {
+    display: none;
+  }
 
 .other-medical-services__service-list {
   list-style-type: none;
@@ -132,12 +191,46 @@ body {
   text-decoration: none;
 }
 
-@media screen {
-  
+@media (width >=1024px) {
+  .other-medical-services {
+    padding: 24px 0;
+  }
+
+  .other-medical-services__title {
+    font-size: 11px;
+    padding-bottom: 16px;
+  }
+
+  .other-medical-services__service-list--desktop {
+    display: block;
+    width: 642px;
+    padding-bottom: 16px;
+  }
+
+  .other-medical-services__service-list {
+    display: none;
+  }
+
+  .other-medical-services__service-item {
+    font-size: 16px;
+  }
+
+  .other-medical-services__service-item--span-color {
+    font-size: 16px;
+  }
+
+  .other-medical-services__link {
+    font-size: 16px;
+  }
 }
 
 .additional-services {
   padding: 16px 0 32px 0;
+}
+
+.additional-services__service-card-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .additional-services__service-card {
@@ -154,8 +247,8 @@ body {
 }
 
 .additional-services__service-text {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .additional-services__service-title {
@@ -170,4 +263,42 @@ body {
   font-size: 12px;
   line-height: 20px;
   color: #292D3A;
+}
+
+@media (width >=1024px) {
+  .additional-services {
+    padding: 24px 0 48px 0;
+  }
+
+  .additional-services__service-card-container {
+    flex-direction: row;
+  }
+
+  .additional-services__service-card {
+    flex-direction: column;
+    padding: 28px 0 40px;
+    gap: 20px;
+    width: 185px;
+    height: 265px;
+  }
+
+  .additional-services__service-image {
+    display: block;
+    max-width: 80px;
+  }
+
+  .additional-services__service-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additional-services__service-title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .additional-services__service-description {
+    font-size: 14px;
+    text-align: center;
+  }
 }
