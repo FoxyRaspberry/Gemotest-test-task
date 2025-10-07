@@ -40,25 +40,15 @@ body {
 }
 
 .medical-services__service-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 4px;
   padding: 28px 32px 32px 32px;
   width: 216px;
   height: 240px;
-  display: flex;
-  /* flex: 0 0 70%;
-  transition: transform 0.5s ease; */
-
-  flex-direction: column;
-  justify-content: space-between;
 }
-
-/* .medical-services__service-card:nth-child(2) {
-    flex: 0 0 30%; 
-  }
-
-  .medical-services__service-card:nth-child(3) {
-    display: none;
-  } */
 
 #medical-services__service-card--1 {
   background-image: url(./images/Rectangle3.3.webp);
@@ -90,13 +80,13 @@ body {
   background-color: #F26531;
   border-radius: 20px;
   border: none;
+  padding-inline: 20px;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
   text-align: center;
   vertical-align: middle;
   color: #fff;
-  max-width: 96px;
 }
 
 @media (width >=1024px) {
@@ -116,9 +106,6 @@ body {
   }
 
   .medical-services__service-card {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 32px 35px 40px 40px;
     width: 298px;
     height: 280px;
