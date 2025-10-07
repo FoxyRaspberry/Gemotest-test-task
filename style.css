@@ -162,6 +162,7 @@ body {
 }
 
 .other-medical-services__separator {
+  margin-inline: 10px;
   color: #eaeaeb;
 }
 
