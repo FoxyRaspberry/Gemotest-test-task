@@ -176,6 +176,10 @@ body {
   color: #292D3A;
 }
 
+.other-medical-services__separator {
+  color: #eaeaeb;
+}
+
 .other-medical-services__service-item--span-color {
   font-weight: 400;
   font-size: 13px;
@@ -213,6 +217,7 @@ body {
 
   .other-medical-services__service-item {
     font-size: 16px;
+    line-height: 32px;
   }
 
   .other-medical-services__service-item--span-color {
@@ -234,11 +239,18 @@ body {
 }
 
 .additional-services__service-card {
-  background-color: rgba(234, 202, 77, 0.08);
   padding: 16px 16px 16px 12px;
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.additional-services__service-card:nth-child(odd) {
+  background-color: #fbf7e6;
+}
+
+.additional-services__service-card:nth-child(even) {
+  background-color: #fdfbf2;
 }
 
 .additional-services__service-image {
