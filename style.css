@@ -116,14 +116,12 @@ body {
   }
 
   .medical-services__service-card {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 32px 35px 40px 40px;
     width: 298px;
     height: 280px;
-    /* flex: 0 0 70%;
-    transition: transform 0.5s ease; */
-
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .medical-services__service-card-title {
@@ -136,6 +134,12 @@ body {
 
   .medical-services__service-card-button {
     font-size: 13px;
+    padding-inline: 20px;
+    max-width: none;
+  }
+
+  #medical-services__service-card--3 .medical-services__service-card-button {
+    width: 160px;
   }
 }
 
